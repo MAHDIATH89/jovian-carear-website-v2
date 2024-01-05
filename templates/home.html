@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html>
+   <head>
+     <title>Jovan Career </title>
+     
+   
+     <style>
+        h1{
+          font-size : 40px;
+          font-family: Montserrat;
+
+          color:rgb(50,50,50););
+          text-align: center;
+        }
+        #banner{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        h2{
+          font-size : 32px;
+          font-family: Montserrat;
+          color:rgb(100,100,100);
+          text-align: center;
+        }
+       .body-text{
+         font-family: Montserrat;
+         color:rgb(80,80,80);
+         font-weight:normal;
+         text-align: center;
+       }
+       #container{
+         max-width: 720px;
+         margin: 0 auto ;
+       }
+       .button{
+         text-align: center;
+       }
+       .copyright{
+         text-align:center;
+         font-family:Timesnewroman;
+
+       }
+       .job-dec{
+         margin-bottom:16px;
+         font-family:Montserrat;
+         border-bottom: 12px;
+         padding-bottom: 18px;
+      
+       }
+       .job-title{
+         color:rgb(120,120,120);
+         margin-bottom: 4px;
+         font-size:20px;
+       }
+       .place{
+         font-size:13px
+       }
+       .button-2{
+         text-align: right;
+       }
+       
+      </style>
+
+   </head>
+  <body>
+
+      <h1>Jovian-Carears</h1>
+      <img id="banner" src="https://a23189c9-f5ef-4f02-bc92-ae6122a3882e-00-2a4gqjsex6qb7.pike.replit.dev/static/banner.jpg" height="320">
+    <div id="container">
+    <h2>About us </h2>
+    <p class="body-text">
+      Welcome to our dynamic career community, where passion meets purpose! At [Company Name], we thrive on innovation, collaboration, and a commitment to making a meaningful impact. As a trailblazer in [industry/sector], we foster a culture that empowers our talented professionals to unleash their full potential. Join a team dedicated to pushing boundaries, embracing diversity, and driving positive change. Whether you're an experienced professional or a rising star, [Company Name] offers exciting opportunities for growth and development. Be part of a forward-thinking organization that values creativity, values, and a shared dedication to excellence. Elevate your career with us, where every day brings new possibilities!
+    </p>
+    <h2>Job Opening</h2>
+    <p class="body-text"> TODO - Show the jobs here</p>
+
+        <div>
+          {% for job in jobs %}
+            {% include 'job-item.html' %}
+          {% endfor %}
+        </div>
+
+  <div class="button">  <button>Contact Us</button> 
+  </div>
+      <p class="copyright"> Copyright 2022 , Mahdiath Hasan</p>
+  </div>
+  </body>
+</html>
