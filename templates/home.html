@@ -64,8 +64,9 @@
 
    </head>
   <body>
-
+    
       <h1>Jovian-Carears</h1>
+    {% include 'nav.html' %}
       <img id="banner" src="https://a23189c9-f5ef-4f02-bc92-ae6122a3882e-00-2a4gqjsex6qb7.pike.replit.dev/static/banner.jpg" height="320">
     <div id="container">
     <h2>About us </h2>
@@ -81,9 +82,9 @@
           {% endfor %}
         </div>
 
-  <div class="button">  <button>Contact Us</button> 
+  <div class="button"> <a target="_blank" href="mailto:mahdiathhasan89@gmail.com?subject=Feed%20back%20about%20the%20site&body=My%20name%3A%20%3Cyour%20name%20here%20%3E%0D%0A%0D%0AMy%20Question%3A%20%3Center%20question%20here%20%3E"> <button>Contact Us</button> </a>
   </div>
-      <p class="copyright"> Copyright 2022 , Mahdiath Hasan</p>
+      {% include 'footer.html' %}
   </div>
   </body>
 </html>
