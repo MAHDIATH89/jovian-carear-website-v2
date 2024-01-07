@@ -4,7 +4,7 @@ from flask import Flask, render_template ,jsonify
 
 app = Flask(__name__)
 
-""" JOBS = [
+ JOBS = [
   {
     'Id' : 1,
     'title': 'Data Analyst',
@@ -29,15 +29,8 @@ app = Flask(__name__)
     'location': 'San Francisco, USA',
     'salary': '$120,000'
   }
-]   """
+]  
 
-def load_jobs_from_db():
-  with engine.connect() as conn:
-    result = conn.execute(text(" select * from jobs "))
-    jobs = []
-    for row in result.all():
-      jobs.append(dict(row))
-      return jobs
 
 @app.route("/")
 def hello_world():
